@@ -16,7 +16,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4.1.0
 
-      - run: tree / | wc -l
+      - run: tree /bin | wc -l
 
 
 # On : [merge_group, push, pull_request, pull_request_target,  schedule, workflow_call, workflow_run, workflow_dispatch, branch_protection_rule, check_run, check_suite, commit_comment, create, delete, ] ... few more
