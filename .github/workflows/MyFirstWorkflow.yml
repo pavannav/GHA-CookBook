@@ -18,7 +18,7 @@ jobs:
 
       - run: tree /bin | wc -l
       - run: |
-          echo "Hello ${{ secret.WHO_TO_GREET }} From ${{ github.actor }}"
+          echo "Hello ${{ secrets.WHO_TO_GREET }} From ${{ github.actor }}"
           echo "My secret is ${{ secrets.MY_SECRET }}"
 
 
