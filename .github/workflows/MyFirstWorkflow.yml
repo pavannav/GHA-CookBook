@@ -21,5 +21,19 @@ jobs:
           echo "Hello ${{ vars.WHO_TO_GREET }} From ${{ github.actor }}"
           echo "My secret is ${{ secrets.MY_SECRET }}"
 
+jobs:
+  second_job:
+    name: my second_job job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "From second_job ---------"
+      - run: hostname
+jobs:
+  third_job:
+    name: my third_job job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "From third_job ------------"
+      - run: hostname      
 
 # On : [merge_group, push, pull_request, pull_request_target,  schedule, workflow_call, workflow_run, workflow_dispatch, branch_protection_rule, check_run, check_suite, commit_comment, create, delete, ] ... few more
