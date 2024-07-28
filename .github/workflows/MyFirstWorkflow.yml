@@ -36,4 +36,4 @@ jobs:
       - run: echo "From third_job ------------"
       - run: hostname      
 
-# On : [merge_group, push, pull_request, pull_request_target,  schedule, workflow_call, workflow_run, workflow_dispatch, branch_protection_rule, check_run, check_suite, commit_comment, create, delete, ] ... few more
+# On : [merge_group, push, pull_request, pull_request_target,   schedule, workflow_call, workflow_run, workflow_dispatch, branch_protection_rule, check_run, check_suite, commit_comment, create, delete, ] ... few more
